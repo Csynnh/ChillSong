@@ -1,4 +1,4 @@
-document.title = "sMusic";
+document.title = "Mp3 player";
 window.addEventListener("load", () => {
    const song = document.querySelector("#song");
    const songName = document.querySelector(".player-name");
