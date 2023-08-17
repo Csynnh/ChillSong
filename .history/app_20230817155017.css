@@ -290,7 +290,7 @@ html {
 
 @media screen and (max-width: 768px) {
    .player {
-      padding: 20px;
+      padding-top: 20px;
       max-width: 100%;
       display: flex;
       gap: 20px;

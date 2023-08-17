@@ -290,15 +290,15 @@ html {
 
 @media screen and (max-width: 768px) {
    .player {
-      padding: 20px;
-      max-width: 100%;
+      padding-top: 20px;
+      max-width: 200px;
       display: flex;
       gap: 20px;
       flex-direction: column;
       margin: unset;
    }
    .player-main {
-      width: 100%;
+      width: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -322,31 +322,20 @@ html {
       font-size: 15px;
       letter-spacing: 0.8px;
    }
-
+   .player-progress {
+      gap: 5px;
+   }
    .volume-slider {
       border-radius: 6px;
       width: 4px;
-      transform: translate(-50%, -40%);
       height: 60px;
    }
    .volume-fill {
-      border-radius: 6px;
-   }
-   .bar {
-      height: 5px;
-   }
-   .player-number {
-      font-size: 12px;
-   }
-   .player-tool {
-      font-size: 20px;
-      height: 45px;
-      flex-wrap: wrap;
-   }
-   .player-tool i {
-      width: 10%;
-   }
-   .player-playlist {
+      border-radius: 8px;
+      position: absolute;
+      bottom: 0;
+      background-color: rgb(240, 140, 140);
       width: 100%;
+      height: 100%;
    }
 }

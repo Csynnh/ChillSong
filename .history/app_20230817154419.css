@@ -290,15 +290,15 @@ html {
 
 @media screen and (max-width: 768px) {
    .player {
-      padding: 20px;
-      max-width: 100%;
+      padding-top: 20px;
+      max-width: 200px;
       display: flex;
       gap: 20px;
       flex-direction: column;
       margin: unset;
    }
    .player-main {
-      width: 100%;
+      width: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -333,20 +333,11 @@ html {
       border-radius: 6px;
    }
    .bar {
+      width: 95%;
       height: 5px;
-   }
-   .player-number {
-      font-size: 12px;
-   }
-   .player-tool {
-      font-size: 20px;
-      height: 45px;
-      flex-wrap: wrap;
-   }
-   .player-tool i {
-      width: 10%;
-   }
-   .player-playlist {
-      width: 100%;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      accent-color: rgb(135, 80, 90);
+      cursor: pointer;
    }
 }

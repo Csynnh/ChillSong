@@ -290,15 +290,15 @@ html {
 
 @media screen and (max-width: 768px) {
    .player {
-      padding: 20px;
-      max-width: 100%;
+      padding-top: 20px;
+      max-width: 200px;
       display: flex;
       gap: 20px;
       flex-direction: column;
       margin: unset;
    }
    .player-main {
-      width: 100%;
+      width: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -347,6 +347,6 @@ html {
       width: 10%;
    }
    .player-playlist {
-      width: 100%;
+      width: 250px;
    }
 }
