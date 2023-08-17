@@ -77,6 +77,22 @@ window.addEventListener("load", () => {
    ];
    let songIndex = 0;
 
+   const volumeSlider = document.querySelector(".volume-slider");
+   const volumeFill = document.querySelector(".volume-fill");
+   const volumeIcon = document.querySelector(".volume-icon");
+
+   volumeSlider.addEventListener("click", (e) => {
+      const rect = volumeSlider.getBoundingClientRect();
+      const offsetY = e.clientY - rect.top;
+      const percentage = 100 - (offsetY / volumeSlider.offsetHeight) * 100;
+      song.volume = percentage / 100;
+      volumeFill.style.height = `${percentage}%`;
+   });
+
+   volumeIcon.addEventListener("click", (e) => {
+      volumeSlider.classList.toggle("is-hide");
+   });
+
    // set default song:
    songName.textContent = listSongs[songIndex].name;
    song.setAttribute("src", listSongs[songIndex].src);
