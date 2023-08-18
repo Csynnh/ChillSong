@@ -346,9 +346,11 @@ html {
    }
    .player-tool {
       font-size: 20px;
+      height: 45px;
+      flex-wrap: wrap;
    }
-   .player-main {
-      gap: 10px;
+   .player-tool i {
+      width: 10%;
    }
    .player-playlist {
       width: 100%;

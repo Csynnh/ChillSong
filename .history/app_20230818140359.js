@@ -123,10 +123,7 @@ window.addEventListener("load", () => {
       } else if (shufflebtn.matches(".is-active")) handleChangeSong(1);
       else {
          song.pause();
-         playerImage.classList.remove("is-playing");
-         playBtn.classList.remove("fa-pause");
-         playBtn.classList.add("fa-play");
-         playing = true;
+         playing = false;
       }
    });
    bar.addEventListener("change", (e) => {

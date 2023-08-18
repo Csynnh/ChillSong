@@ -121,13 +121,6 @@ window.addEventListener("load", () => {
       if (repeatbtn.matches(".is-active")) {
          handleChangeSong(0);
       } else if (shufflebtn.matches(".is-active")) handleChangeSong(1);
-      else {
-         song.pause();
-         playerImage.classList.remove("is-playing");
-         playBtn.classList.remove("fa-pause");
-         playBtn.classList.add("fa-play");
-         playing = true;
-      }
    });
    bar.addEventListener("change", (e) => {
       song.currentTime = parseInt(e.target.value);

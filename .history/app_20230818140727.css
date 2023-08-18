@@ -347,8 +347,8 @@ html {
    .player-tool {
       font-size: 20px;
    }
-   .player-main {
-      gap: 10px;
+   .player-tool i {
+      /* width: 10%; */
    }
    .player-playlist {
       width: 100%;

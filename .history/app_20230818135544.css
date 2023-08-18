@@ -194,7 +194,6 @@ html {
    visibility: hidden;
    transition: all 0.2s ease;
 }
-.player-tool i.player-shuffle.is-active,
 .player-tool i.player-repeat.is-active {
    display: inline-flex;
    width: 45px;
@@ -346,9 +345,11 @@ html {
    }
    .player-tool {
       font-size: 20px;
+      height: 45px;
+      flex-wrap: wrap;
    }
-   .player-main {
-      gap: 10px;
+   .player-tool i {
+      width: 10%;
    }
    .player-playlist {
       width: 100%;
